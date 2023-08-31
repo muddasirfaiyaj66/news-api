@@ -27,7 +27,7 @@ const handleLoadNews = async(categoryId) =>{
         const div = document.createElement('div');
         div.innerHTML = `
         <div class="card bg-base-100 shadow-xl">
-        <figure><img src="${news?.image_url}" alt="Shoes" /></figure>
+        <figure><img src="${news.image_url}" alt="News Banner " /></figure>
         <div class="card-body">
         <button class="my-2 py-2 px-3 mx-auto  rounded-full border-none bg-pink-500 text-white font-medium ">
         ${news?.rating?.badge}
@@ -73,7 +73,7 @@ const handleModal = async (newsId) =>{
     <dialog id="my_modal_1" class="modal">
     <form method="dialog" class="modal-box">
     <div class="card bg-base-100 shadow-xl">
-    <figure><img src="${news?.image_url}" alt="" /></figure>
+    <figure><img src="${news.image_url}" alt="News Banner" /></figure>
     <div class="card-body">
     <button class="my-2 py-2 px-3 mx-auto  rounded-full border-none bg-pink-500 text-white font-medium ">
     ${news?.rating?.badge}
